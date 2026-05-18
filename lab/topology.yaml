@@ -1,0 +1,27 @@
+name: intent-lab
+
+topology:
+  nodes:
+    lab-spine-01:
+      kind: ceos
+      image: ceos:4.36.0.1F
+      startup-config: configs/spine01.cfg
+    lab-spine-02:
+      kind: ceos
+      image: ceos:4.36.0.1F
+      startup-config: configs/spine02.cfg
+    lab-leaf-01:
+      kind: ceos
+      image: ceos:4.36.0.1F
+      startup-config: configs/leaf01.cfg
+    lab-leaf-02:
+      kind: ceos
+      image: ceos:4.36.0.1F
+      startup-config: configs/leaf02.cfg
+
+  links:
+    - endpoints: ["lab-spine-01:eth1", "lab-leaf-01:eth1"]
+    - endpoints: ["lab-spine-01:eth2", "lab-leaf-02:eth1"]
+    - endpoints: ["lab-spine-02:eth1", "lab-leaf-01:eth2"]
+    - endpoints: ["lab-spine-02:eth2", "lab-leaf-02:eth2"]
+    - endpoints: ["lab-spine-01:eth3", "lab-spine-02:eth3"]

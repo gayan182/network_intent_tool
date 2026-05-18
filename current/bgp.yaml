@@ -1,0 +1,129 @@
+devices:
+  lab-leaf-01:
+    bgp:
+      vrfs:
+        default:
+          asn: '65001'
+          neighbors:
+          - ip: 10.0.0.1
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.2
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.4
+            remote_asn: '65001'
+            state: Established
+          router_id: 10.0.0.3
+    ospf:
+      vrfs:
+        default:
+          instances:
+            '1':
+              neighbors:
+              - area: 0.0.0.0
+                interface: Ethernet1
+                neighbor_ip: 10.0.0.1
+                state: full
+              - area: 0.0.0.0
+                interface: Ethernet2
+                neighbor_ip: 10.0.0.2
+                state: full
+  lab-leaf-02:
+    bgp:
+      vrfs:
+        default:
+          asn: '65001'
+          neighbors:
+          - ip: 10.0.0.1
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.2
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.3
+            remote_asn: '65001'
+            state: Established
+          router_id: 10.0.0.4
+    ospf:
+      vrfs:
+        default:
+          instances:
+            '1':
+              neighbors:
+              - area: 0.0.0.0
+                interface: Ethernet1
+                neighbor_ip: 10.0.0.1
+                state: full
+              - area: 0.0.0.0
+                interface: Ethernet2
+                neighbor_ip: 10.0.0.2
+                state: full
+  lab-spine-01:
+    bgp:
+      vrfs:
+        default:
+          asn: '65001'
+          neighbors:
+          - ip: 10.0.0.2
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.3
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.4
+            remote_asn: '65001'
+            state: Established
+          router_id: 10.0.0.1
+    ospf:
+      vrfs:
+        default:
+          instances:
+            '1':
+              neighbors:
+              - area: 0.0.0.0
+                interface: Ethernet1
+                neighbor_ip: 10.0.0.3
+                state: full
+              - area: 0.0.0.0
+                interface: Ethernet2
+                neighbor_ip: 10.0.0.4
+                state: full
+              - area: 0.0.0.0
+                interface: Ethernet3
+                neighbor_ip: 10.0.0.2
+                state: full
+  lab-spine-02:
+    bgp:
+      vrfs:
+        default:
+          asn: '65001'
+          neighbors:
+          - ip: 10.0.0.1
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.3
+            remote_asn: '65001'
+            state: Established
+          - ip: 10.0.0.4
+            remote_asn: '65001'
+            state: Established
+          router_id: 10.0.0.2
+    ospf:
+      vrfs:
+        default:
+          instances:
+            '1':
+              neighbors:
+              - area: 0.0.0.0
+                interface: Ethernet1
+                neighbor_ip: 10.0.0.3
+                state: full
+              - area: 0.0.0.0
+                interface: Ethernet3
+                neighbor_ip: 10.0.0.1
+                state: full
+              - area: 0.0.0.0
+                interface: Ethernet2
+                neighbor_ip: 10.0.0.4
+                state: full

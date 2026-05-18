@@ -1,0 +1,227 @@
+{
+  "name": "intent-lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-eaed8d4d7ba0",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFJjVLFcKAR2+AslDy+KKsuGlg0m7AJnzWszNbUEZVyZ"],
+  "nodes": {
+    "lab-leaf-01": {
+      "index": "0",
+      "shortname": "lab-leaf-01",
+      "longname": "clab-intent-lab-lab-leaf-01",
+      "fqdn": "lab-leaf-01.intent-lab.io",
+      "group": "",
+      "labdir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-leaf-01",
+      "kind": "ceos",
+      "image": "ceos:4.36.0.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:7c:9e:ac",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-leaf-01",
+        "clab-node-longname": "clab-intent-lab-lab-leaf-01",
+        "clab-node-name": "lab-leaf-01",
+        "clab-node-type": "",
+        "clab-owner": "gayan",
+        "clab-topo-file": "/home/gayan/network-intent-tool/lab/topology.yaml",
+        "containerlab": "intent-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lab-leaf-02": {
+      "index": "1",
+      "shortname": "lab-leaf-02",
+      "longname": "clab-intent-lab-lab-leaf-02",
+      "fqdn": "lab-leaf-02.intent-lab.io",
+      "group": "",
+      "labdir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-leaf-02",
+      "kind": "ceos",
+      "image": "ceos:4.36.0.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:b1:11:bd",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-leaf-02",
+        "clab-node-longname": "clab-intent-lab-lab-leaf-02",
+        "clab-node-name": "lab-leaf-02",
+        "clab-node-type": "",
+        "clab-owner": "gayan",
+        "clab-topo-file": "/home/gayan/network-intent-tool/lab/topology.yaml",
+        "containerlab": "intent-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lab-spine-01": {
+      "index": "2",
+      "shortname": "lab-spine-01",
+      "longname": "clab-intent-lab-lab-spine-01",
+      "fqdn": "lab-spine-01.intent-lab.io",
+      "group": "",
+      "labdir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-spine-01",
+      "kind": "ceos",
+      "image": "ceos:4.36.0.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:ca:ad:17",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-spine-01",
+        "clab-node-longname": "clab-intent-lab-lab-spine-01",
+        "clab-node-name": "lab-spine-01",
+        "clab-node-type": "",
+        "clab-owner": "gayan",
+        "clab-topo-file": "/home/gayan/network-intent-tool/lab/topology.yaml",
+        "containerlab": "intent-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "lab-spine-02": {
+      "index": "3",
+      "shortname": "lab-spine-02",
+      "longname": "clab-intent-lab-lab-spine-02",
+      "fqdn": "lab-spine-02.intent-lab.io",
+      "group": "",
+      "labdir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-spine-02",
+      "kind": "ceos",
+      "image": "ceos:4.36.0.1F",
+      "mgmt-net": "",
+      "mgmt-intf": "Management0",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "00:1c:73:76:03:b7",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
+        "clab-node-group": "",
+        "clab-node-kind": "ceos",
+        "clab-node-lab-dir": "/home/gayan/network-intent-tool/lab/clab-intent-lab/lab-spine-02",
+        "clab-node-longname": "clab-intent-lab-lab-spine-02",
+        "clab-node-name": "lab-spine-02",
+        "clab-node-type": "",
+        "clab-owner": "gayan",
+        "clab-topo-file": "/home/gayan/network-intent-tool/lab/topology.yaml",
+        "containerlab": "intent-lab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "lab-spine-01",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:79:23:70",
+          "peer": "z"
+        },
+        "z": {
+          "node": "lab-leaf-01",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:9b:80:56",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "lab-spine-01",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:33:1c:4a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "lab-leaf-02",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:81:20:fb",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "lab-spine-02",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:03:6c:ea",
+          "peer": "z"
+        },
+        "z": {
+          "node": "lab-leaf-01",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:52:85:42",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "lab-spine-02",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:0e:09:b7",
+          "peer": "z"
+        },
+        "z": {
+          "node": "lab-leaf-02",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:bd:c5:40",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "lab-spine-01",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:11:33:5e",
+          "peer": "z"
+        },
+        "z": {
+          "node": "lab-spine-02",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:9b:bf:2d",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
