@@ -14,8 +14,8 @@ all:
         clab-intent-lab-lab-leaf-01:
           ansible_host: 172.20.20.2
         clab-intent-lab-lab-leaf-02:
-          ansible_host: 172.20.20.4
-        clab-intent-lab-lab-spine-01:
           ansible_host: 172.20.20.3
+        clab-intent-lab-lab-spine-01:
+          ansible_host: 172.20.20.4
         clab-intent-lab-lab-spine-02:
           ansible_host: 172.20.20.5

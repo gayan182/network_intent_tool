@@ -1,4 +1,4 @@
-! Startup-config last modified at Mon May 18 18:36:21 2026 by root
+! Startup-config last modified at Mon May 25 19:45:54 2026 by root
 ! device: lab-leaf-01 (cEOSLab, EOS-4.36.0.1F-47425148.43601F (engineering build))
 !
 no aaa root

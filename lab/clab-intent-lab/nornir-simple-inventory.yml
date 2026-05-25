@@ -8,12 +8,12 @@ lab-leaf-02:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.4
+    hostname: 172.20.20.3
 lab-spine-01:
     username: admin
     password: admin
     platform: ceos
-    hostname: 172.20.20.3
+    hostname: 172.20.20.4
 lab-spine-02:
     username: admin
     password: admin

@@ -1,4 +1,4 @@
-! Startup-config last modified at Mon May 18 18:36:14 2026 by root
+! Startup-config last modified at Mon May 25 19:45:56 2026 by root
 ! device: lab-spine-02 (cEOSLab, EOS-4.36.0.1F-47425148.43601F (engineering build))
 !
 no aaa root

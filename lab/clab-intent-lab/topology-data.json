@@ -32,7 +32,7 @@
       "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:7c:9e:ac",
+      "mac-address": "00:1c:73:44:0d:4d",
       "labels": {
         "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
         "clab-node-group": "",
@@ -59,11 +59,11 @@
       "image": "ceos:4.36.0.1F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.3",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:b1:11:bd",
+      "mac-address": "00:1c:73:ff:91:d0",
       "labels": {
         "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
         "clab-node-group": "",
@@ -90,11 +90,11 @@
       "image": "ceos:4.36.0.1F",
       "mgmt-net": "",
       "mgmt-intf": "Management0",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.4",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:ca:ad:17",
+      "mac-address": "00:1c:73:b3:11:8a",
       "labels": {
         "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
         "clab-node-group": "",
@@ -125,7 +125,7 @@
       "mgmt-ipv4-prefix-length": 24,
       "mgmt-ipv6-address": "3fff:172:20:20::5",
       "mgmt-ipv6-prefix-length": 64,
-      "mac-address": "00:1c:73:76:03:b7",
+      "mac-address": "00:1c:73:11:61:2d",
       "labels": {
         "clab-mgmt-net-bridge": "br-eaed8d4d7ba0",
         "clab-node-group": "",
@@ -148,13 +148,13 @@
         "a": {
           "node": "lab-spine-01",
           "interface": "eth1",
-          "mac": "aa:c1:ab:79:23:70",
+          "mac": "aa:c1:ab:19:ef:7d",
           "peer": "z"
         },
         "z": {
           "node": "lab-leaf-01",
           "interface": "eth1",
-          "mac": "aa:c1:ab:9b:80:56",
+          "mac": "aa:c1:ab:d6:f0:19",
           "peer": "a"
         }
       }
@@ -164,13 +164,13 @@
         "a": {
           "node": "lab-spine-01",
           "interface": "eth2",
-          "mac": "aa:c1:ab:33:1c:4a",
+          "mac": "aa:c1:ab:3a:75:fd",
           "peer": "z"
         },
         "z": {
           "node": "lab-leaf-02",
           "interface": "eth1",
-          "mac": "aa:c1:ab:81:20:fb",
+          "mac": "aa:c1:ab:e5:9a:2e",
           "peer": "a"
         }
       }
@@ -180,13 +180,13 @@
         "a": {
           "node": "lab-spine-02",
           "interface": "eth1",
-          "mac": "aa:c1:ab:03:6c:ea",
+          "mac": "aa:c1:ab:61:a5:58",
           "peer": "z"
         },
         "z": {
           "node": "lab-leaf-01",
           "interface": "eth2",
-          "mac": "aa:c1:ab:52:85:42",
+          "mac": "aa:c1:ab:db:a2:e0",
           "peer": "a"
         }
       }
@@ -196,13 +196,13 @@
         "a": {
           "node": "lab-spine-02",
           "interface": "eth2",
-          "mac": "aa:c1:ab:0e:09:b7",
+          "mac": "aa:c1:ab:4f:14:d0",
           "peer": "z"
         },
         "z": {
           "node": "lab-leaf-02",
           "interface": "eth2",
-          "mac": "aa:c1:ab:bd:c5:40",
+          "mac": "aa:c1:ab:b2:51:81",
           "peer": "a"
         }
       }
@@ -212,13 +212,13 @@
         "a": {
           "node": "lab-spine-01",
           "interface": "eth3",
-          "mac": "aa:c1:ab:11:33:5e",
+          "mac": "aa:c1:ab:f7:d0:07",
           "peer": "z"
         },
         "z": {
           "node": "lab-spine-02",
           "interface": "eth3",
-          "mac": "aa:c1:ab:9b:bf:2d",
+          "mac": "aa:c1:ab:9e:4c:3e",
           "peer": "a"
         }
       }
